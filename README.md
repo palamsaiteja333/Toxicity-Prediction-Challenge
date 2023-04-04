@@ -1,11 +1,17 @@
 # Toxicity Prediction Challenge
 Deployed Supervised Learning Models to predict the toxicity of a chemical based on SMILES (Simplified Molecular Input Line Entry System).
 
-The Jupyter Notebook file Toxicity.ipynb can be run in the following two ways:
-
-# Option 1: Run with Original Dataset Files
-
 **Prerequisties** 
+
+### 1. Python 3.9.13
+
+### 2. Jupyter Notebook
+
+To run a Jupyter Notebook file with the .ipynb extension, you will need the following prerequisites:
+Jupyter Notebook software: You need to have Jupyter Notebook installed on your computer. You can download and install it by following the instructions on the official Jupyter website which is: https://jupyter.org/install
+
+### 3. Required Libraries
+
 In order to run the this program in the Local Machine, the following libraries must be installed. 
 The libraries can be installed in the Local Machine using the following command:
 
@@ -18,6 +24,12 @@ pip install tf2_gnn
 ```bash
 pip install tensorflow
 ```
+
+The Jupyter Notebook file Toxicity.ipynb can be run in the following two ways:
+
+# Option 1: Run with Original Dataset Files
+
+
 
 ### Step 1: 
 Download and Extract the training and testing dataset file:
