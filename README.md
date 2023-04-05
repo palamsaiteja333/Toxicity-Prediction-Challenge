@@ -58,16 +58,16 @@ If the location of train.sdf dataset is in different folder then the location of
 Run **Section 1: Import Libraries**, to import the necessary libraries that are required for the program.
 
 ### Step 2:
-Run **Section 4: Load the Generated Features**, with the train_400.csv and test_400.csv files that is presented in the GitHub repository.
+Run **Section 3: Load the Generated Features**, with the train_400.csv and test_400.csv files that is presented in the GitHub repository.
 
 ### Step 3: 
-Run **Section 6: Load the Pickle Files**, with the rfe_features.pkl and boruta_features.pkl files.
+Run **Section 5: Load the Pickle Files**, with the rfe_features.pkl and boruta_features.pkl files.
 
 ### Step 4:
-Run **Section 7: Modelling**
+Run **Section 6: Modelling**
 
 ### Step 5:
-Run **Section 8: Result**, to generate the Submission file.
+Run **Section 7: Result**, to generate the Submission file.
 
 
 
