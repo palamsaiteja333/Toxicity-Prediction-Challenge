@@ -11,7 +11,7 @@ Approach: The predictions for the testing dataset in the Submission.csv file can
 This approach can help to accurately predict the toxicity of chemicals and ensure safety in various industries.
 
 
-# Option 1: Dcoker
+# Option 1: Docker
 
 **Prerequisties:** 
 To run the program with Docker, Docker Daemon should be running on your local machine. You can download and install Docker on multiple platforms. Refer to the below link and choose the best installation path for you:
