@@ -164,6 +164,6 @@ rfe_features.pkl
 ```
 
 ### Step 2:
-To generate the "Submission.csv" file, simply run all cells within the Jupyter Notebook file. This will ensure that all cells are executed and the desired output is obtained.
+To generate the "Submission.csv" file, you must run all cells from **Section-1 to Section-7** within the Jupyter Notebook file. Running cells from these sections will ensure that all necessary computations and processes are executed, resulting in the desired output.
 
 
