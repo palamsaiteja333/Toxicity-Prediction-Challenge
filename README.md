@@ -1,12 +1,12 @@
 # Title: Deployment of Supervised Learning Models for Predicting Chemical Toxicity Based on SMILES
 
-Objective: To predict the toxicity of a chemical using simplified molecular input line entry system (SMILES) and deployed supervised learning models.
+Objective: To predict the toxicity of a chemical using simplified molecular input line entry system (SMILES).
 
 Approach: The predictions for the testing dataset in the Submission.csv file can be achieved in the following three ways:
 
 1. Docker.
-2. Run Toxicity-Prediction.ipynb with pre-generated features and predict the toxicity.
-3. Run Toxicity-Prediction.ipynb to generate features and predict the toxicity.
+2. Run Toxicity-Prediction.ipynb file with pre-generated features and predict the toxicity.
+3. Run Toxicity-Prediction.ipynb file to generate features and predict the toxicity.
 
 This approach can help to accurately predict the toxicity of chemicals and ensure safety in various industries.
 
@@ -34,39 +34,45 @@ After running the Docker image, an instance of the container will be created. Yo
 ![image](https://user-images.githubusercontent.com/51771508/230697796-eda2511a-a1a6-4b3a-850f-f67bedf70ded.png)
 
 ### Step3:
-Now run the below command to see the ContainerID and copy the ContainerID:
+Now run the below command to copy the ContainerID of devops333/toxicity-prediction:latest image:
 ```bash
-docker ps
+docker ps -a
 ```
-![image](https://user-images.githubusercontent.com/51771508/230697879-a6c10d2a-cb38-4d7b-970a-576bb3460272.png)
+![image](https://user-images.githubusercontent.com/51771508/230738024-d8b09bc4-7c6f-4899-bd3b-dc8c4a11df7c.png)
 
 ### Step4:
 Commit the Container with the ContainerID and copy the sha256ID as below:
 ```bash
 docker commit ContainerID
 ```
-![image](https://user-images.githubusercontent.com/51771508/230697984-308b8cdd-76b4-410e-85ab-64becc8acd54.png)
+![image](https://user-images.githubusercontent.com/51771508/230738096-dec7f9cd-c50e-46ab-b84c-b668038f9dad.png)
 
 ### Step5:
-Run the below command with the sha256ID:
+Run the below command with the copied sha256ID:
 ```bash
 docker run -it sha256ID  bash
 ```
-![image](https://user-images.githubusercontent.com/51771508/230698091-a61a8662-465e-4904-a97f-ac974b9ead3a.png)
+![image](https://user-images.githubusercontent.com/51771508/230738192-e65dbeeb-cca9-40d6-84e9-103d3819784c.png)
+
 
 ### Step6: 
 Now, open a new terminal and run the below command to copy the latest ContainerID:
 ```bash
 docker ps
 ```
-![image](https://user-images.githubusercontent.com/51771508/230699022-a263182c-298a-49a0-92b7-829efd9f9fba.png)
+![image](https://user-images.githubusercontent.com/51771508/230738234-2e1c05d3-eaf1-4966-8559-0957f726fbb8.png)
+
  
 ### Step7: 
 Run the below command with the latest ContainerID and replace Your-Location with the choice of you local host machine location to store Submission.csv file:
 ```bash
 docker cp latest-ContainerID:/app/Submission.csv Your-Location
 ```
-![image](https://user-images.githubusercontent.com/51771508/230699060-6d32431d-4d62-4ce0-9b6b-331cc2958ef2.png)
+![image](https://user-images.githubusercontent.com/51771508/230738333-fcf12eaa-1139-40cc-b775-ca83dd26cec0.png)
+
+### Step8:
+Now, go to the above specified path to find the Submission.csv file.
+
 
 **Docker Repository:**
 The Docker image can be found in the following Docker Repository link: https://hub.docker.com/r/devops333/toxicity-prediction
@@ -99,38 +105,65 @@ Jupyter Notebook is a web application that allows you to create and share docume
 To run this program on your local machine, you will need to install the following libraries using the command below:
 
 ```bash
-pip install lightgbm numpy pandas sklearn rdkit tqdm boruta
+pip install lightgbm numpy pandas sklearn rdkit tqdm boruta pickle
 ```
 
 
 
 
-# Option 2: Run Toxicity-Prediction.ipynb with pre-generated features and predict the toxicity.
+# Option 2: Run Toxicity-Prediction.ipynb file with pre-generated features and predict the toxicity.
 
 ### Step 1: 
-Run **Section 1: Import Libraries**, to import the necessary libraries that are required for the program.
+To begin, you must download the entire repository from GitHub onto your local machine and extract it. Once extracted, you will notice another zip file named "400_features.7z" inside. Extract this file as well to obtain the "train_400.csv" and "test_400.csv" files.
+
+After extracting all necessary files, place them into a single folder. In doing so, you will be able to successfully run the program. Below is a list of files you should have in the designated folder to ensure proper execution of the program.
+
+```bash
+Toxicity-Prediction.ipynb
+train_400.csv
+test_400.csv
+test_II.csv
+train_II.csv
+boruta_features.pkl
+rfe_features.pkl
+```
 
 ### Step 2:
-Run **Section 3: Load the Generated Features**, with the train_400.csv and test_400.csv files that is presented in the GitHub repository.
+Run **Section-1: Import Libraries**, to import the necessary libraries that are required for the program.
 
-### Step 3: 
-Run **Section 5: Load the Pickle Files**, with the rfe_features.pkl and boruta_features.pkl files.
+### Step 3:
+Run **Section-3: Load the Pre-Generated Features**, with the train_400.csv and test_400.csv files that is presented in the GitHub repository.
+
+### Step 4: 
+Run **Section-5: Load the Pre-Selected Features**, with the rfe_features.pkl and boruta_features.pkl files that is presented in the GitHub repository.
 
 ### Step 4:
-Run **Section 6: Modelling**
+Run **Section-6: Modeling**
 
 ### Step 5:
-Run **Section 7: Result**, to generate the Submission file.
+Run **Section-7: Result**, to generate the Submission file.
 
 
 
 
-# Option 3: Run Toxicity-Prediction.ipynb to generate features and predict the toxicity.
+# Option 3: Run Toxicity-Prediction.ipynb file to generate features and predict the toxicity.
 
 ### Step 1: 
-Make sure Toxicity-Prediction.ipynb, train_II and test_II are in the same folder.
+To begin, you must download the entire repository from GitHub onto your local machine and extract it. Once extracted, you will notice another zip file named "400_features.7z" inside. Extract this file as well to obtain the "train_400.csv" and "test_400.csv" files.
+
+After extracting all necessary files, place them into a single folder. In doing so, you will be able to successfully run the program. Below is a list of files you should have in the designated folder to ensure proper execution of the program.
+
+```bash
+Toxicity-Prediction.ipynb
+train_400.csv
+test_400.csv
+test_II.csv
+train_II.csv
+boruta_features.pkl
+rfe_features.pkl
+```
 
 ### Step 2:
-Run all cells in the Jupyter Notebook file to run all of the cells and generate the Submission.csv file.
+To generate the "Submission.csv" file, simply run all cells within the Jupyter Notebook file. This will ensure that all cells are executed and the desired output is obtained.
 
 
