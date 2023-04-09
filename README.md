@@ -129,7 +129,7 @@ rfe_features.pkl
 ```
 
 ### Step 2:
-Run **Section-1: Import Libraries**, to import the necessary libraries that are required for the program.
+Open **Toxicity-Prediction.ipynb** file with Jupyter Notebook and run **Section-1: Import Libraries**, to import the necessary libraries that are required for the program.
 
 ### Step 3:
 Run **Section-3: Load the Pre-Generated Features**, with the train_400.csv and test_400.csv files that is presented in the GitHub repository.
@@ -164,6 +164,6 @@ rfe_features.pkl
 ```
 
 ### Step 2:
-To generate the "Submission.csv" file, you must run all cells from **Section-1 to Section-7** within the Jupyter Notebook file. Running cells from these sections will ensure that all necessary computations and processes are executed, resulting in the desired output.
+Open **Toxicity-Prediction.ipynb** file with Jupyter Notebook and run all cells from **Section-1 to Section-7** to generate the "Submission.csv" file. Running all the cells from these sections will ensure that all necessary computations and processes are executed, resulting in the desired output.
 
 
