@@ -22,7 +22,7 @@ Link to install Docker: https://docs.docker.com/get-docker/
 To reduce the runtime of the container, pre-generated features are used for the Docker image creation.
 
 ### Step1: 
-Pull and run the Docker image from the Docker repository using the following command:
+Open the command prompt (Windows machine) or terminal (MacBook) and run the below command to pull and execute the Docker image from the Docker repository:
 
 ```bash
 docker run devops333/toxicity-prediction:latest
