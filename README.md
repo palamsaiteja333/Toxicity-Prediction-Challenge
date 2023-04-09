@@ -141,7 +141,7 @@ Run **Section-5: Load the Pre-Selected Features**, with the **rfe_features.pkl a
 Run **Section-6: Modeling**, to build a model.
 
 ### Step 5:
-Run **Section-7: Result**, to generate the Submission file.
+Run **Section-7: Result**, to generate the **Submission.csv** file.
 
 
 
@@ -164,6 +164,6 @@ rfe_features.pkl
 ```
 
 ### Step 2:
-Open **Toxicity-Prediction.ipynb** file with Jupyter Notebook and run all cells from **Section-1 to Section-7** to generate the "Submission.csv" file. Running all the cells from these sections will ensure that all necessary computations and processes are executed, resulting in the desired output.
+Open **Toxicity-Prediction.ipynb** file with Jupyter Notebook and run all cells from **Section-1 to Section-7** to generate the **Submission.csv** file. Running all the cells from these sections will ensure that all necessary computations and processes are executed, resulting in the desired output.
 
 
