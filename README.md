@@ -132,13 +132,13 @@ rfe_features.pkl
 Open **Toxicity-Prediction.ipynb** file with Jupyter Notebook and run **Section-1: Import Libraries**, to import the necessary libraries that are required for the program.
 
 ### Step 3:
-Run **Section-3: Load the Pre-Generated Features**, with the train_400.csv and test_400.csv files that is presented in the GitHub repository.
+Run **Section-3: Load the Pre-Generated Features**, with the **train_400.csv** and **test_400.csv** files that is presented in the GitHub repository.
 
 ### Step 4: 
-Run **Section-5: Load the Pre-Selected Features**, with the rfe_features.pkl and boruta_features.pkl files that is presented in the GitHub repository.
+Run **Section-5: Load the Pre-Selected Features**, with the **rfe_features.pkl and boruta_features.pkl** files that is presented in the GitHub repository.
 
 ### Step 4:
-Run **Section-6: Modeling**
+Run **Section-6: Modeling**, to build a model.
 
 ### Step 5:
 Run **Section-7: Result**, to generate the Submission file.
